@@ -54,6 +54,7 @@ body{
 
 .flex-menu ul li a:hover{
     background-color: var(--pink-color);
+    color: #000;
 }
 
 /* main */
@@ -102,6 +103,11 @@ main .picture-in-picture:hover{
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    border: 2px solid #FFF;
+    transition: all 300ms ease-in-out;
+}
+
+.fa-brands:hover{
     border: 2px solid var(--pink-color);
 }
 @keyframes pisca {
