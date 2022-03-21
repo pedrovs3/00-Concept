@@ -76,12 +76,12 @@ main .picture-in-picture:hover{
 
 .botao-saibamais{
     position: absolute;
-    bottom: 150px;
+    bottom: 130px;
     right: calc(100vw - 53vw);
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    
+    animation: botao-mov 2s infinite ease;
 }
 
 .social-menu{
@@ -121,6 +121,19 @@ main .picture-in-picture:hover{
     font-size: 18px;
     font-weight: 100;
 }
+
+@keyframes botao-mov {
+    0%{
+        bottom: 130px;
+    }
+    50%{
+        bottom: 150px;
+    }
+    100%{
+        bottom: 130px;
+    }
+}
+
 @keyframes pisca {
     0%{
         box-shadow: 1px 1px 10px 5px var(--pink-color);
